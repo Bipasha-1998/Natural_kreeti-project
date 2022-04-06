@@ -1,0 +1,19 @@
+/* main info */
+
+.main__info{
+    height: 630px;
+}
+
+
+/* main fruits */
+.main__fruits__about--image {
+    width: 560px;
+    height: 570px;
+}
+
+
+/* main details */
+.main__details {
+    width: 100%;
+    height: 40rem;
+}
