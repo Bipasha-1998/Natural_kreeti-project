@@ -1,0 +1,30 @@
+/* navbar */
+.menu{
+    gap: 15px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* main info */
+
+.main__info{
+    height: auto;
+}
+
+
+/* main fruits */
+.main__fruits__about--image {
+    width: 95%;
+    height: 570px;
+}
+
+
+/* main details */
+.main__details {
+    width: 100%;
+
+}
