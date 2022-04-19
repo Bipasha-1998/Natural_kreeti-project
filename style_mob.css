@@ -88,6 +88,10 @@ label{
     padding: 0;
 }
 
+.main__fruits__about--text h2{
+    padding-top: 15px;
+  }
+
 .main__fruits__about--text p {
     font-size: 1rem;
 }
