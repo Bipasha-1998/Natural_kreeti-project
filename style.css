@@ -4,10 +4,6 @@ html, body{
   height: 100%;
 }
 
-body, h1, h2, h3, h4{
-  margin: 0;
-  padding: 0;
-}
 #page_content{
   position: relative;
   min-height: 100vh;
@@ -25,7 +21,7 @@ body, h1, h2, h3, h4{
   }
 
   .nav_desktop--nav__logo{
-      width: 135px;
+      width: 10rem;
   }
   
   .menu{
@@ -141,23 +137,28 @@ body, h1, h2, h3, h4{
 
     .main__info{
       display: flex;
-      margin: 1rem;
       justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
     }
   
     .main__info__box{
       padding: 1rem;
-      width: 33%;
+      width: 30%;
     }
   
     .main__info__box--image{
       display: block;
-      margin: auto;
-      width: 100%;
+      width: 95%;
+    }
+
+    .main___info__box--title{
+      margin-top: 0.5rem;
     }
   
     .main__info__box--para{
       font-size: 20px;
+      max-width: 90%;
     }
   
     .main__info__box--ReadMore{
@@ -187,6 +188,11 @@ body, h1, h2, h3, h4{
       color: rgb(37, 5, 110);
       padding: 2rem;
     }
+
+    .main__fruits__about--text h2{
+      margin-top: 0.5rem;
+    } 
+
     .main__fruits__about--text p {
       font-size: 25px;
       width: 90%;
