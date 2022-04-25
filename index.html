@@ -7,33 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natural</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="style_mob.css">
-    <link rel="stylesheet" media="(min-width: 601px) and (max-width: 985px)" href="style_tab.css">
+    <link rel="stylesheet" media="screen and (max-width: 660px)" href="style_mob.css">
+    <link rel="stylesheet" media="(min-width: 661px) and (max-width: 985px)" href="style_tab.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid m-0 p-0" id="page_content">
 
-        <div class="header">
+        <!-- navigation bar -->
+        <div class="nav">
             <div class="nav_mob">
                 <img src="./assets/logo.jpg" alt="LOGO IMAGE" class="nav_mob--nav__logo">
                 <label for="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle" />
-                <div class="nav_mob--menu">
+                <ul class="nav_mob--menu">
                     <a href="#home">Home</a>
                     <a href="#product">Products</a>
                     <a href="#services">Services</a>
                     <a href="#about">About</a>
                     <a href="#gallery">Gallery</a>
                     <a href="#contact">Contact</a>
-                </div>
+                </ul>
             </div>
 
             <div class="nav_desktop">
-                <div class="menu">
+                <ul class="menu">
                     <a href="#home">Home</a>
                     <a href="#product">Products</a>
                     <a href="#services">Services</a>
@@ -41,12 +42,15 @@
                     <a href="#about">About</a>
                     <a href="#gallery">Gallery</a>
                     <a href="#contact">Contact</a>
-                </div>
+                </ul>
             </div>
         </div>
 
+        <!-- Main page content -->
         <div class="main">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Main page carousel -->
+            <div id="main__Carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-item active carousel-slide">
                     <img src="./assets/Slide2_active.jpg" alt="...">
                 </div>
@@ -59,22 +63,25 @@
                     <img src="./assets/Slide3.jpg" alt="...">
                 </div>
 
-                <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <a href="#main_page__Carousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </a>
-                <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                <a href="#main_page__Carousel" class="carousel-control-next" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </a>
             </div>
+
+
+            <!-- Main page info -->
 
             <div class="main__info">
                 <div class="main__info__box">
                     <img src="./assets/pedro-monteiro-HfIex7qwTlI-unsplash.jpg" alt="Image-1"
                         class="main__info__box--image">
 
-                    <h2 class="main___info__box--title">Lorem ipsum dolor sit amet.</h2>
+                    <h4 class="main___info__box--title">Lorem ipsum dolor sit amet.</h4>
 
                     <p class="main__info__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
                         quibusdam nisi fugiat maiores accusamus, totam aperiam officia dignissimos reprehenderit.
@@ -86,7 +93,7 @@
                     <img src="./assets/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg" alt="Image-2"
                         class="main__info__box--image">
 
-                    <h2 class="main___info__box--title">Lorem ipsum dolor sit amet.</h2>
+                    <h4 class="main___info__box--title">Lorem ipsum dolor sit amet.</h4>
 
                     <p class="main__info__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
                         quibusdam nisi fugiat maiores accusamus, totam aperiam officia dignissimos reprehenderit.
@@ -98,7 +105,7 @@
                     <img src="./assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="Image3"
                         class="main__info__box--image">
 
-                    <h2 class="main___info__box--title">Lorem ipsum dolor sit amet.</h2>
+                    <h4 class="main___info__box--title">Lorem ipsum dolor sit amet.</h4>
 
                     <p class="main__info__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
                         quibusdam nisi fugiat maiores accusamus, totam aperiam officia dignissimos reprehenderit.
@@ -108,45 +115,49 @@
                 </div>
             </div>
 
+            <!-- Main page fruits -->
             <div class="main__fruits">
                 <div class="main__fruits__about">
                     <div class="main__fruits__about--text">
                         <h2>Lorem ipsum dolor sit.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit
                             amet
-                            consectetur adipisicing elit.</p>
+                            consectetur</p>
                     </div>
                     <img src="./assets/Download-Fruit.png" alt="" class="main__fruits__about--image">
                 </div>
             </div>
 
+
+            <!-- Main page details -->
             <div class="main__details">
                 <div class="main__details--intro">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <h2>Lorem ipsum dolor sit amet.</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam et nihil optio. Commodi ipsum
-                        necessitatibus soluta laudantium sapiente eos cum?</p>
+                        necessitatibus soluta</p>
                 </div>
                 <div class="main__details__column">
                     <div class="main__details__column--item"><i>"Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Minima
                             consequuntur eaque maiores exercitationem officia praesentium aut magnam quibusdam nobis
                             placeat,
-                            error saepe eius non necessitatibus hic facere voluptatum vitae odio."</i> </div>
+                            error saepe"</i> </div>
 
                     <div class="main__details__column--vl"></div>
 
                     <div class="main__details__column--item"><i>"Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Voluptate, tenetur in cupiditate omnis incidunt illo similique, quae debitis nihil at nobis
-                            numquam
-                            reprehenderit et dicta illum dolorem soluta porro cumque?"</i> </div>
+                        elit. Minima
+                        consequuntur eaque maiores exercitationem officia praesentium aut magnam quibusdam nobis
+                        placeat,
+                        error saepe"</i> </div>
                 </div>
             </div>
-
         </div>
+            
+        <!-- Footer  -->
+        <footer class="footer">Copyright &copy; 2019 Natural. All rights reserved.</footer>
     </div>
 
-    <footer class="footer">Copyright &copy; 2019 Natural. All rights reserved.</footer>
 
 
 

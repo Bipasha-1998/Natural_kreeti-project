@@ -1,10 +1,14 @@
-/* header */
+
+
+/* Navigation bar */
+
 .nav_desktop{
     display: none;
 }
 
 .nav_mob{
     display: block;
+    width: 100%;
 }
 label{
     display: block;
@@ -13,6 +17,8 @@ label{
 }
 
 .nav_mob--menu{
+    margin: 0;
+    padding: 0;
     text-align: center;
     width: 100%;
     display: none;
@@ -22,8 +28,8 @@ label{
     display: block;
     margin: 0;
     color: white;
-    background: rgb(97, 37, 97);
-    border-bottom: 1px solid #EAEAEB;
+    background: rgb(37, 5, 110);
+    border-bottom: 1px solid #eaeaeb3a;
 }
 
 #toggle:checked + .nav_mob--menu{
@@ -39,7 +45,7 @@ label{
 
 /* main image */
 
-#myCarousel{
+#main__Carousel{
     overflow: hidden;
     height: 29rem;
   }
@@ -65,41 +71,37 @@ label{
 
 .main__info__box{
     width: 90%;
-    height: auto;
+    padding: 1rem;
     margin: auto;
 }
 
-.main__info__box--image{
-    height: 300px;
+.main__info__box--para {
+    font-size: 1rem;
 }
 
 /* main fruits */
 .main__fruits{
-    height: 38rem;
+    height: 22rem;
 }
 
 .main__fruits__about{
-    height: 375px;
+    height: 285px;
+
 }
 
 .main__fruits__about--text{
     width: 100%;
-    height: 165px;
-    padding: 0;
+    padding: 1.5rem;
 }
-
-.main__fruits__about--text h2{
-    padding-top: 15px;
-  }
 
 .main__fruits__about--text p {
     font-size: 1rem;
 }
 
 .main__fruits__about--image{
-    width: 90%;
-    height: 385px;
+    width: 70%;
 }
+
 
 /* main details */
 .main__details{
@@ -107,11 +109,12 @@ label{
 }
 .main__details__column{
     flex-direction: column;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .main__details--intro p{
     width: 90%;
+    font-size: 1rem;
 }
 
 /* Footer */

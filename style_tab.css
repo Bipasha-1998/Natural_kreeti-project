@@ -1,12 +1,28 @@
 /* navbar */
+.nav_desktop{
+    height: 100px;
+}
+
 .menu{
     gap: 1rem;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 
+/* main page */
 
+/* Banner carousel  */
+#main__Carousel{
+    height: 32rem;
+  }
 
+  .carousel-item {
+    height: 32rem;
+  }
+
+  .carousel-item img{
+    height: 30rem;
+  }
 
 
 /* main info */
@@ -15,16 +31,40 @@
     height: auto;
 }
 
-
-/* main fruits */
-.main__fruits__about--image {
-    width: 95%;
-    height: 570px;
+.main__info__box {
+    padding: 1rem;
+    width: 30%;
 }
 
+/* main fruits */
+
+.main__fruits {
+    height: 30rem;
+}
+
+.main__fruits__about {
+    height: 22rem;
+}
+
+.main__fruits__about--text p {
+    font-size: 20px;
+}
+
+
+.main__fruits__about--image {
+    width: 60%;
+}
 
 /* main details */
 .main__details {
     width: 100%;
+}
 
+.main__details__column{
+    margin: 0;
+    font-size: 20px;
+}
+
+.main__details--intro p {
+    font-size: 20px;
 }
