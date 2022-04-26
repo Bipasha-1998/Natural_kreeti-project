@@ -69,13 +69,17 @@ label{
     width: 100%;
 }
 
-.main__info__box{
+.main__info__container{
+    flex-direction: column;
+}
+
+.main__info__container__box{
     width: 90%;
     padding: 1rem;
     margin: auto;
 }
 
-.main__info__box--para {
+.main__info__container__box--para {
     font-size: 1rem;
 }
 
