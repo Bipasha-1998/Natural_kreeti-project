@@ -47,15 +47,15 @@ label{
 
 #main__Carousel{
     overflow: hidden;
-    height: 29rem;
+    height: 22rem;
   }
 
 .carousel-item {
-    height: 29rem;
+    height: 22rem;
 }
 
 .carousel-item img{
-    height: 27rem;
+    height: 20rem;
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -81,11 +81,11 @@ label{
 
 /* main fruits */
 .main__fruits{
-    height: 22rem;
+    height: 25rem;
 }
 
 .main__fruits__about{
-    height: 285px;
+    height: 75%;
 
 }
 

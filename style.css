@@ -26,10 +26,10 @@ html, body{
   
   .menu{
     margin: 0;
-    padding: 0;
+    padding: 0 2rem;
     height: 100px;
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     justify-content: center;
     gap: 3rem;
     align-items: center;
@@ -139,24 +139,26 @@ html, body{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 1rem 0;
+      margin: 1rem;
     }
   
     .main__info__box{
       padding: 1rem;
-      width: 30%;
+      width: 33%;
     }
   
     .main__info__box--image{
       display: block;
-      width: 95%;
+      width: 100%;
     }
 
     .main___info__box--title{
       margin-top: 0.5rem;
+      font-weight: 400;
     }
   
     .main__info__box--para{
+      color: rgb(104, 100, 100);
       font-size: 20px;
       max-width: 90%;
     }
@@ -189,8 +191,9 @@ html, body{
       padding: 2rem;
     }
 
-    .main__fruits__about--text h2{
+    .main__fruits__about--text h1{
       margin-top: 0.5rem;
+      font-weight: 300;
     } 
 
     .main__fruits__about--text p {
@@ -216,6 +219,10 @@ html, body{
         text-align: center;
         color: rgb(37, 5, 110);
         padding: 15px;
+      }
+
+      .main__details--intro h1{
+        font-weight: 300;
       }
     
       .main__details--intro p{
