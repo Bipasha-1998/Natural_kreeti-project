@@ -1,138 +1,146 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natural</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 660px)" href="style_mob.css">
-    <link rel="stylesheet" media="(min-width: 661px) and (max-width: 985px)" href="style_tab.css">
+    <link rel="stylesheet" media="screen and (max-width: 670px)" href="style_mobile.css">
+    <link rel="stylesheet" media="(min-width: 671px) and (max-width: 985px)" href="style_tab.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Natural</title>
+
 
 </head>
 
 <body>
     <div class="container-fluid m-0 p-0" id="page_content">
+        <!-- Navigation bar/menu -->
+        <nav class="nav">
+            <!-- Navigation in desktop -->
+            <div class="nav__desktop">
+                <li class="nav__desktop--items">Home</li>
+                <li class="nav__desktop--items">Products</li>
+                <li class="nav__desktop--items">Services</li>
+                <img src="./assets/logo.jpg" alt="LOGO IMAGE" class="nav__desktop--logo">
+                <li class="nav__desktop--items">About</li>
+                <li class="nav__desktop--items">Gallery</li>
+                <li class="nav__desktop--items">Contact</li>
+            </div>
 
-        <!-- navigation bar -->
-        <div class="nav">
-            <div class="nav_mob">
-                <img src="./assets/logo.jpg" alt="LOGO IMAGE" class="nav_mob--nav__logo">
+            <!-- Navigation in mobile -->
+            <div class="nav__mob">
+                <img src="./assets/logo.jpg" alt="LOGO IMAGE" class="nav__mob--logo">
                 <label for="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle" />
-                <ul class="nav_mob--menu">
-                    <a href="#home">Home</a>
-                    <a href="#product">Products</a>
-                    <a href="#services">Services</a>
-                    <a href="#about">About</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact">Contact</a>
+                <ul class="nav__mob__menu">
+                    <li class="nav__mob__menu--items">Home</li>
+                    <li class="nav__mob__menu--items">Products</li>
+                    <li class="nav__mob__menu--items">Services</li>
+                    <li class="nav__mob__menu--items">About</li>
+                    <li class="nav__mob__menu--items">Gallery</li>
+                    <li class="nav__mob__menu--items">Contact</li>
                 </ul>
             </div>
+        </nav>
 
-            <div class="nav_desktop">
-                <ul class="menu">
-                    <a href="#home">Home</a>
-                    <a href="#product">Products</a>
-                    <a href="#services">Services</a>
-                    <img src="./assets/logo.jpg" alt="LOGO IMAGE" class="nav_desktop--nav__logo">
-                    <a href="#about">About</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact">Contact</a>
-                </ul>
-            </div>
-        </div>
 
         <!-- Main page content -->
-        <div class="main">
+        <main>
+            <!-- Banner Carousel section-->
+            <section class="main__banner">
+                <div id="main__banner--carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-item active carousel-slide">
+                        <img src="./assets/Slide2_active.jpg" alt="...">
+                    </div>
 
-            <!-- Main page carousel -->
-            <div id="main__Carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-item active carousel-slide">
-                    <img src="./assets/Slide2_active.jpg" alt="...">
+                    <div class="carousel-item carousel-slide">
+                        <img src="./assets/Slide1.jpg" alt="...">
+                    </div>
+
+                    <div class="carousel-item carousel-slide">
+                        <img src="./assets/Slide3.jpg" alt="...">
+                    </div>
+
+                    <a href="#main__banner--carousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a href="#main__banner--carousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
                 </div>
+            </section>
 
-                <div class="carousel-item carousel-slide">
-                    <img src="./assets/Slide1.jpg" alt="...">
-                </div>
-
-                <div class="carousel-item carousel-slide">
-                    <img src="./assets/Slide3.jpg" alt="...">
-                </div>
-
-                <a href="#main__Carousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a href="#main__Carousel" class="carousel-control-next" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-
-
-            <!-- Main page info -->
-
-            <div class="main__info">
+            <!-- Information section-->
+            <section class="main__info">
                 <div class="main__info__container">
                     <div class="main__info__container__box">
                         <img src="./assets/pedro-monteiro-HfIex7qwTlI-unsplash.jpg" alt="Image-1"
                             class="main__info__container__box--image">
-    
+
                         <h4 class="main__info__container__box--title">Lorem ipsum dolor sit amet.</h4>
-    
-                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+
+                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Modi
                             quibusdam nisi fugiat maiores accusamus.</p>
-    
+
                         <a href="#" class="main__info__container__box--ReadMore">Read More</a>
                     </div>
                     <div class="main__info__container__box">
                         <img src="./assets/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg" alt="Image-2"
                             class="main__info__container__box--image">
-    
+
                         <h4 class="main__info__container__box--title">Lorem ipsum dolor sit amet.</h4>
-    
-                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+
+                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Modi
                             quibusdam nisi fugiat maiores accusamus.</p>
-    
+
                         <a href="#" class="main__info__container__box--ReadMore">Read More</a>
                     </div>
                     <div class="main__info__container__box">
                         <img src="./assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="Image3"
                             class="main__info__container__box--image">
-    
+
                         <h4 class="main__info__container__box--title">Lorem ipsum dolor sit amet.</h4>
-    
-                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+
+                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Modi
                             quibusdam nisi fugiat maiores accusamus.</p>
-    
+
                         <a href="#" class="main__info__container__box--ReadMore">Read More</a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Main page fruits -->
-            <div class="main__fruits">
+            <!-- Fruits section -->
+            <section class="main__fruits">
                 <div class="main__fruits__about">
-                    <div class="main__fruits__about--text">
-                        <h1>Lorem ipsum dolor sit.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit
+                    <div class="main__fruits__about__text">
+                        <h1 class="main__fruits__about__text--title">Lorem ipsum dolor</h1>
+                        <p class="main__fruits__about__text--para">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</p>
+                        <p class="main__fruits__about__text--para"> Lorem ipsum dolor
+                            sit
                             amet
                             consectetur</p>
                     </div>
                     <img src="./assets/Download-Fruit.png" alt="" class="main__fruits__about--image">
                 </div>
-            </div>
+            </section>
 
-
-            <!-- Main page details -->
-            <div class="main__details">
-                <div class="main__details--intro">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam et nihil optio. Commodi ipsum
+            <!-- Details section -->
+            <section class="main__details">
+                <div class="main__details__intro">
+                    <h1 class="main__details__intro--title">Lorem ipsum dolor sit amet.</h1>
+                    <p class="main__details__intro--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam et nihil optio. Commodi ipsum
                         necessitatibus soluta</p>
                 </div>
                 <div class="main__details__column">
@@ -145,15 +153,16 @@
                     <div class="main__details__column--vl"></div>
 
                     <div class="main__details__column--item"><i>"Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Minima
-                        consequuntur eaque maiores exercitationem officia praesentium aut magnam quibusdam nobis
-                        placeat,
-                        error saepe"</i> </div>
+                            elit. Minima
+                            consequuntur eaque maiores exercitationem officia praesentium aut magnam quibusdam nobis
+                            placeat,
+                            error saepe"</i> </div>
                 </div>
-            </div>
-        </div>
-            
-        <!-- Footer  -->
+            </section>
+        </main>
+
+
+        <!-- Footer -->
         <footer class="footer">Copyright &copy; 2019 Natural. All rights reserved.</footer>
     </div>
 
@@ -172,6 +181,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

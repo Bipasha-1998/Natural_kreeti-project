@@ -1,18 +1,18 @@
-/* navbar */
-.nav_desktop{
-    height: 100px;
-}
+/* Navigation bar/menu*/
 
-.menu{
+/* Navigation in desktop */
+
+.nav__desktop{
     gap: 1rem;
-    font-size: 18px;
 }
 
+.nav__desktop--logo{
+    width: 150px;
+}
 
-/* main page */
+/* Banner Carousel section */
 
-/* Banner carousel  */
-#main__Carousel{
+#main__banner--carousel{
     height: 32rem;
   }
 
@@ -24,47 +24,3 @@
     height: 30rem;
   }
 
-
-/* main info */
-
-.main__info{
-    height: auto;
-}
-
-.main__info__container__box {
-    padding: 1rem;
-    width: 30%;
-}
-
-/* main fruits */
-
-.main__fruits {
-    height: 34rem;
-}
-
-.main__fruits__about {
-    height: 22rem;
-}
-
-.main__fruits__about--text p {
-    font-size: 20px;
-}
-
-
-.main__fruits__about--image {
-    width: 60%;
-}
-
-/* main details */
-.main__details {
-    width: 100%;
-}
-
-.main__details__column{
-    margin: 0;
-    font-size: 20px;
-}
-
-.main__details--intro p {
-    font-size: 20px;
-}
