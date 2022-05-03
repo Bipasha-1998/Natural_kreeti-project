@@ -2,25 +2,24 @@
 
 /* Navigation in desktop */
 
-.nav__desktop{
-    gap: 1rem;
+.nav__desktop {
+  gap: 1rem;
 }
 
-.nav__desktop--logo{
-    width: 150px;
+.nav__desktop--logo {
+  width: 150px;
 }
 
 /* Banner Carousel section */
 
-#main__banner--carousel{
-    height: 32rem;
-  }
+#main__banner--carousel {
+  height: 32rem;
+}
 
-  .carousel-item {
-    height: 32rem;
-  }
+.carousel-item {
+  height: 32rem;
+}
 
-  .carousel-item img{
-    height: 30rem;
-  }
-
+.carousel-item img {
+  height: 30rem;
+}

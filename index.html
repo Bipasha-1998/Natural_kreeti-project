@@ -1,187 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 670px)"
+      href="style_mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 671px) and (max-width: 985px)"
+      href="style_tab.css"
+    />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 670px)" href="style_mobile.css">
-    <link rel="stylesheet" media="(min-width: 671px) and (max-width: 985px)" href="style_tab.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <title>Natural</title>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <div class="container-fluid m-0 p-0" id="page_content">
-        <!-- Navigation bar/menu -->
-        <nav class="nav">
-            <!-- Navigation in desktop -->
-            <div class="nav__desktop">
-                <li class="nav__desktop--items">Home</li>
-                <li class="nav__desktop--items">Products</li>
-                <li class="nav__desktop--items">Services</li>
-                <img src="./assets/logo.jpg" alt="LOGO IMAGE" class="nav__desktop--logo">
-                <li class="nav__desktop--items">About</li>
-                <li class="nav__desktop--items">Gallery</li>
-                <li class="nav__desktop--items">Contact</li>
+      <!-- Navigation bar/menu -->
+      <nav class="nav">
+        <!-- Navigation in desktop -->
+        <div class="nav__desktop">
+          <li class="nav__desktop--items">Home</li>
+          <li class="nav__desktop--items">Products</li>
+          <li class="nav__desktop--items">Services</li>
+          <img
+            src="./assets/logo.jpg"
+            alt="LOGO IMAGE"
+            class="nav__desktop--logo"
+          />
+          <li class="nav__desktop--items">About</li>
+          <li class="nav__desktop--items">Gallery</li>
+          <li class="nav__desktop--items">Contact</li>
+        </div>
+
+        <!-- Navigation in mobile -->
+        <div class="nav__mob">
+          <img
+            src="./assets/logo.jpg"
+            alt="LOGO IMAGE"
+            class="nav__mob--logo"
+          />
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle" />
+          <ul class="nav__mob__menu">
+            <li class="nav__mob__menu--items">Home</li>
+            <li class="nav__mob__menu--items">Products</li>
+            <li class="nav__mob__menu--items">Services</li>
+            <li class="nav__mob__menu--items">About</li>
+            <li class="nav__mob__menu--items">Gallery</li>
+            <li class="nav__mob__menu--items">Contact</li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main page content -->
+      <main>
+        <!-- Banner Carousel section-->
+        <section class="main__banner">
+          <div
+            id="main__banner--carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-item active carousel-slide">
+              <img src="./assets/Slide2_active.jpg" alt="..." />
             </div>
 
-            <!-- Navigation in mobile -->
-            <div class="nav__mob">
-                <img src="./assets/logo.jpg" alt="LOGO IMAGE" class="nav__mob--logo">
-                <label for="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle" />
-                <ul class="nav__mob__menu">
-                    <li class="nav__mob__menu--items">Home</li>
-                    <li class="nav__mob__menu--items">Products</li>
-                    <li class="nav__mob__menu--items">Services</li>
-                    <li class="nav__mob__menu--items">About</li>
-                    <li class="nav__mob__menu--items">Gallery</li>
-                    <li class="nav__mob__menu--items">Contact</li>
-                </ul>
+            <div class="carousel-item carousel-slide">
+              <img src="./assets/Slide1.jpg" alt="..." />
             </div>
-        </nav>
 
+            <div class="carousel-item carousel-slide">
+              <img src="./assets/Slide3.jpg" alt="..." />
+            </div>
 
-        <!-- Main page content -->
-        <main>
-            <!-- Banner Carousel section-->
-            <section class="main__banner">
-                <div id="main__banner--carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-item active carousel-slide">
-                        <img src="./assets/Slide2_active.jpg" alt="...">
-                    </div>
+            <a
+              href="#main__banner--carousel"
+              class="carousel-control-prev"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a
+              href="#main__banner--carousel"
+              class="carousel-control-next"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </section>
 
-                    <div class="carousel-item carousel-slide">
-                        <img src="./assets/Slide1.jpg" alt="...">
-                    </div>
+        <!-- Information section-->
+        <section class="main__info">
+          <div class="main__info__container">
+            <div class="main__info__container__box">
+              <img
+                src="./assets/pedro-monteiro-HfIex7qwTlI-unsplash.jpg"
+                alt="Image-1"
+                class="main__info__container__box--image"
+              />
 
-                    <div class="carousel-item carousel-slide">
-                        <img src="./assets/Slide3.jpg" alt="...">
-                    </div>
+              <h4 class="main__info__container__box--title">
+                Lorem ipsum dolor sit amet.
+              </h4>
 
-                    <a href="#main__banner--carousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a href="#main__banner--carousel" class="carousel-control-next" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>
-                </div>
-            </section>
+              <p class="main__info__container__box--para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                quibusdam nisi fugiat maiores accusamus.
+              </p>
 
-            <!-- Information section-->
-            <section class="main__info">
-                <div class="main__info__container">
-                    <div class="main__info__container__box">
-                        <img src="./assets/pedro-monteiro-HfIex7qwTlI-unsplash.jpg" alt="Image-1"
-                            class="main__info__container__box--image">
+              <a href="#" class="main__info__container__box--ReadMore"
+                >Read More</a
+              >
+            </div>
+            <div class="main__info__container__box">
+              <img
+                src="./assets/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg"
+                alt="Image-2"
+                class="main__info__container__box--image"
+              />
 
-                        <h4 class="main__info__container__box--title">Lorem ipsum dolor sit amet.</h4>
+              <h4 class="main__info__container__box--title">
+                Lorem ipsum dolor sit amet.
+              </h4>
 
-                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Modi
-                            quibusdam nisi fugiat maiores accusamus.</p>
+              <p class="main__info__container__box--para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                quibusdam nisi fugiat maiores accusamus.
+              </p>
 
-                        <a href="#" class="main__info__container__box--ReadMore">Read More</a>
-                    </div>
-                    <div class="main__info__container__box">
-                        <img src="./assets/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg" alt="Image-2"
-                            class="main__info__container__box--image">
+              <a href="#" class="main__info__container__box--ReadMore"
+                >Read More</a
+              >
+            </div>
+            <div class="main__info__container__box">
+              <img
+                src="./assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg"
+                alt="Image3"
+                class="main__info__container__box--image"
+              />
 
-                        <h4 class="main__info__container__box--title">Lorem ipsum dolor sit amet.</h4>
+              <h4 class="main__info__container__box--title">
+                Lorem ipsum dolor sit amet.
+              </h4>
 
-                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Modi
-                            quibusdam nisi fugiat maiores accusamus.</p>
+              <p class="main__info__container__box--para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                quibusdam nisi fugiat maiores accusamus.
+              </p>
 
-                        <a href="#" class="main__info__container__box--ReadMore">Read More</a>
-                    </div>
-                    <div class="main__info__container__box">
-                        <img src="./assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="Image3"
-                            class="main__info__container__box--image">
+              <a href="#" class="main__info__container__box--ReadMore"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </section>
 
-                        <h4 class="main__info__container__box--title">Lorem ipsum dolor sit amet.</h4>
+        <!-- Fruits section -->
+        <section class="main__fruits">
+          <div class="main__fruits__about">
+            <div class="main__fruits__about__text">
+              <h1 class="main__fruits__about__text--title">
+                Lorem ipsum dolor
+              </h1>
+              <p class="main__fruits__about__text--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Lorem ipsum dolor sit amet consectetur
+              </p>
+            </div>
+            <img
+              src="./assets/Download-Fruit.png"
+              alt=""
+              class="main__fruits__about--image"
+            />
+          </div>
+        </section>
 
-                        <p class="main__info__container__box--para">Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Modi
-                            quibusdam nisi fugiat maiores accusamus.</p>
+        <!-- Details section -->
+        <section class="main__details">
+          <div class="main__details__intro">
+            <h1 class="main__details__intro--title">
+              Lorem ipsum dolor sit amet.
+            </h1>
+            <p class="main__details__intro--para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              et nihil optio. Commodi ipsum necessitatibus soluta
+            </p>
+          </div>
+          <div class="main__details__column">
+            <div class="main__details__column--item">
+              <i
+                >"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minima consequuntur eaque maiores exercitationem officia
+                praesentium aut magnam quibusdam nobis placeat, error saepe"</i
+              >
+            </div>
 
-                        <a href="#" class="main__info__container__box--ReadMore">Read More</a>
-                    </div>
-                </div>
-            </section>
+            <div class="main__details__column--vl"></div>
 
-            <!-- Fruits section -->
-            <section class="main__fruits">
-                <div class="main__fruits__about">
-                    <div class="main__fruits__about__text">
-                        <h1 class="main__fruits__about__text--title">Lorem ipsum dolor</h1>
-                        <p class="main__fruits__about__text--para">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.</p>
-                        <p class="main__fruits__about__text--para"> Lorem ipsum dolor
-                            sit
-                            amet
-                            consectetur</p>
-                    </div>
-                    <img src="./assets/Download-Fruit.png" alt="" class="main__fruits__about--image">
-                </div>
-            </section>
+            <div class="main__details__column--item">
+              <i
+                >"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minima consequuntur eaque maiores exercitationem officia
+                praesentium aut magnam quibusdam nobis placeat, error saepe"</i
+              >
+            </div>
+          </div>
+        </section>
+      </main>
 
-            <!-- Details section -->
-            <section class="main__details">
-                <div class="main__details__intro">
-                    <h1 class="main__details__intro--title">Lorem ipsum dolor sit amet.</h1>
-                    <p class="main__details__intro--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam et nihil optio. Commodi ipsum
-                        necessitatibus soluta</p>
-                </div>
-                <div class="main__details__column">
-                    <div class="main__details__column--item"><i>"Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Minima
-                            consequuntur eaque maiores exercitationem officia praesentium aut magnam quibusdam nobis
-                            placeat,
-                            error saepe"</i> </div>
-
-                    <div class="main__details__column--vl"></div>
-
-                    <div class="main__details__column--item"><i>"Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Minima
-                            consequuntur eaque maiores exercitationem officia praesentium aut magnam quibusdam nobis
-                            placeat,
-                            error saepe"</i> </div>
-                </div>
-            </section>
-        </main>
-
-
-        <!-- Footer -->
-        <footer class="footer">Copyright &copy; 2019 Natural. All rights reserved.</footer>
+      <!-- Footer -->
+      <footer class="footer">
+        Copyright &copy; 2019 Natural. All rights reserved.
+      </footer>
     </div>
 
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
