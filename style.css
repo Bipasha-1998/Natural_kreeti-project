@@ -74,11 +74,11 @@ main {
 
 #main__banner--carousel {
   overflow: hidden;
-  height: 45rem;
+  height: 40rem;
 }
 .carousel-item {
   width: 100%;
-  height: 45rem;
+  height: 40rem;
   background: black;
   color: white;
   border: 1rem solid rgb(58, 43, 102);
@@ -93,7 +93,7 @@ main {
 
 .carousel-item img {
   width: 100%;
-  height: 43rem;
+  height: 38rem;
   position: absolute;
   background-position: center;
   background-size: cover;
@@ -133,6 +133,7 @@ main {
 }
 
 .main__info__container__box--title {
+  color: rgb(82, 79, 79);
   margin: 1rem 0;
   font-weight: 400;
 }
@@ -143,6 +144,9 @@ main {
 }
 
 .main__info__container__box--ReadMore {
+  background: none;
+  border: none;
+  padding: 0;
   font-size: 20px;
   color: rgb(58, 43, 102);
   text-decoration: none;
