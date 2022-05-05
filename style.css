@@ -102,7 +102,6 @@ main {
 
 .carousel-control-prev,
 .carousel-control-next {
-  top: 19rem;
   opacity: 0.9;
 }
 
@@ -167,13 +166,13 @@ main {
 
 .main__fruits__about {
   height: 70%;
-  background-color: rgb(247, 191, 7);
+  background-color: rgb(251 204 42);
 }
 
 .main__fruits__about__text {
   text-align: center;
   color: rgb(58, 43, 102);
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .main__fruits__about__text--title {
@@ -217,7 +216,7 @@ main {
 }
 
 .main__details__column {
-  padding: 1rem;
+  padding-top: 1rem;
   color: rgb(58, 43, 102);
   font-size: 20px;
   display: flex;
@@ -226,14 +225,25 @@ main {
 }
 
 .main__details__column--item {
-  border-top: 2px solid rgb(165, 164, 164);
-  margin: 10px;
-  padding: 15px;
+  border-top: 2px solid rgb(182, 179, 179);
+  padding-top: 1rem;
+}
+
+.main__details__column--item1 {
+  margin: 10px 20px 10px 10px;
+}
+
+.main__details__column--item2 {
+  margin: 10px 10px 10px 20px;
 }
 
 .main__details__column--vl {
-  border-left: 2px solid rgb(165, 164, 164);
-  margin-top: 15px;
+  border-left: 2px solid rgb(182, 179, 179);
+  margin-top: 20px;
+}
+
+hr {
+  display: none;
 }
 
 /* Footer */
