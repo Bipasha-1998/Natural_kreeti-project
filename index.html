@@ -18,11 +18,6 @@
       media="screen and (max-width: 670px)"
       href="style_mobile.css"
     />
-    <link
-      rel="stylesheet"
-      media="(min-width: 671px) and (max-width: 985px)"
-      href="style_tab.css"
-    />
 
     <title>Natural</title>
   </head>
@@ -32,17 +27,17 @@
     <nav class="nav">
       <!-- Navigation in desktop -->
       <div class="nav__desktop">
-        <li class="nav__desktop--items">Home</li>
-        <li class="nav__desktop--items">Products</li>
-        <li class="nav__desktop--items">Services</li>
+        <li><a href="#Home" class="nav__desktop--items">Home</a></li>
+        <li><a href="#Products" class="nav__desktop--items">Products</a></li>
+        <li><a href="#Services" class="nav__desktop--items">Services</a></li>
         <img
           src="./assets/logo.jpg"
           alt="LOGO IMAGE"
           class="nav__desktop--logo"
         />
-        <li class="nav__desktop--items">About</li>
-        <li class="nav__desktop--items">Gallery</li>
-        <li class="nav__desktop--items">Contact</li>
+        <li><a href="#About" class="nav__desktop--items">About</a></li>
+        <li><a href="#Gallery" class="nav__desktop--items">Gallery</a></li>
+        <li><a href="#Contact" class="nav__desktop--items">Contact</a></li>
       </div>
 
       <!-- Navigation in mobile -->
@@ -51,12 +46,16 @@
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" />
         <ul class="nav__mob__menu">
-          <li class="nav__mob__menu--items">Home</li>
-          <li class="nav__mob__menu--items">Products</li>
-          <li class="nav__mob__menu--items">Services</li>
-          <li class="nav__mob__menu--items">About</li>
-          <li class="nav__mob__menu--items">Gallery</li>
-          <li class="nav__mob__menu--items">Contact</li>
+          <li><a href="#Home" class="nav__mob__menu--items">Home</a></li>
+          <li>
+            <a href="#Products" class="nav__mob__menu--items">Products</a>
+          </li>
+          <li>
+            <a href="#Services" class="nav__mob__menu--items">Services</a>
+          </li>
+          <li><a href="#About" class="nav__mob__menu--items">About</a></li>
+          <li><a href="#Gallery" class="nav__mob__menu--items">Gallery</a></li>
+          <li><a href="#Contact" class="nav__mob__menu--items">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -175,9 +174,11 @@
           <div class="main__fruits__about__text">
             <h1 class="main__fruits__about__text--title">Lorem ipsum dolor</h1>
             <p class="main__fruits__about__text--para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit.<br />
-              Lorem ipsum dolor sit amet consec.
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum.</span
+              >
+              <span>Lorem ipsum dolor sit amet consec.</span>
             </p>
           </div>
           <img
@@ -195,34 +196,35 @@
             Lorem ipsum dolor sit amet.
           </h1>
           <p class="main__details__intro--para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            et nihil optio. <br />
-            Commodi ipsum necessitatibus soluta
+            <span
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+            <span>Commodi ipsum necessitatibus</span>
           </p>
         </div>
         <div class="main__details__column">
-          <div class="main__details__column--item main__details__column--item1">
-            <p>
-              <i
-                >"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Minima consequuntur eaque maiores exercitationem officia
-                praesentium aut magnam quibusdam."</i
-              >
-            </p>
+          <div class="main__details__column__container1">
+            <div
+              class="main__details__column--item main__details__column--item1"
+            >
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                consequuntur eaque maiores exercitationem officia praesentium
+                aut magnam quibusdam."
+              </p>
+            </div>
           </div>
 
-          <div class="main__details__column--vl"></div>
-
-          <hr />
-
-          <div class="main__details__column--item main__details__column--item2">
-            <p>
-              <i
-                >"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Minima consequuntur eaque maiores exercitationem officia
-                praesentium aut magnam quibusdam."</i
-              >
-            </p>
+          <div class="main__details__column__container2">
+            <div
+              class="main__details__column--item main__details__column--item2"
+            >
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                consequuntur eaque maiores exercitationem officia praesentium
+                aut magnam quibusdam."
+              </p>
+            </div>
           </div>
         </div>
       </section>

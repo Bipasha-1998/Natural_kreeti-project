@@ -11,7 +11,7 @@
   width: 100%;
   text-align: right;
   height: 70px;
-  line-height: 70px;
+  line-height: 60px;
 }
 
 .nav__mob--logo {
@@ -31,6 +31,8 @@
 }
 
 .nav__mob__menu--items {
+  text-decoration: none;
+  display: block;
   font-size: 20px;
   list-style: none;
   clear: both;
@@ -60,7 +62,7 @@ label {
 #toggle:checked + .nav__mob__menu {
   display: block;
   position: absolute;
-  top: 70px;
+  top: 60px;
   z-index: 99;
 }
 
@@ -116,6 +118,7 @@ label {
 }
 
 .main__fruits__about__text--para {
+  margin: 0 5px;
   font-size: 18px;
 }
 
@@ -165,16 +168,19 @@ label {
   border: none;
 }
 
-hr {
-  display: block;
-  margin: 0 5rem;
-  background-color: rgb(182, 179, 179);
-  opacity: 0.99;
-  height: 2px;
+.main__details__column__container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-hr:not([size]) {
+.main__details__column__container2::before {
+  content: "";
+  display: block;
+  width: 35%;
   height: 2px;
+  background: rgb(182, 179, 179);
 }
 
 /* Footer */
