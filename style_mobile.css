@@ -62,7 +62,7 @@ label {
 #toggle:checked + .nav__mob__menu {
   display: block;
   position: absolute;
-  top: 60px;
+  top: 70px;
   z-index: 99;
 }
 
